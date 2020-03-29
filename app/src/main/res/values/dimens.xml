@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--BottomNavigationView 的选中没有选中的字体大小-->
+    <dimen name="design_bottom_navigation_active_text_size">12sp</dimen>
+    <dimen name="design_bottom_navigation_text_size">12sp</dimen>
+    <!--BottomNavigationView 只放图标时的设置-->
+    <dimen name="design_bottom_navigation_margin">8dp</dimen>
+    <!--“我的”中的项目高度-->
+    <dimen name="list_height">55dp</dimen>
+    <!--“我的”中的分割线高度-->
+    <dimen name="divider_padding">20dp</dimen>
+    <!--“我的”大类的边距-->
+    <dimen name="list_type_padding">10dp</dimen>
+</resources>

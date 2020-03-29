@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="vertical"
+   >
+    
+
+    <Button 
+        android:id="@+id/tx_camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/yuanjiao"
+        android:text="拍照"/>
+    
+    <Button 
+        android:id="@+id/tx_photo"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/yuanjiao"
+        android:textSize="17sp"
+        android:text="选择相册图片"/>
+    
+    <Button 
+        android:id="@+id/tx_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/yuanjiao"
+        android:textSize="15sp"
+        android:text="取消"/>
+</LinearLayout>

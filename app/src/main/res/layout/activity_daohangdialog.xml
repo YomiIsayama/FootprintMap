@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/baidu_tv"
+        style="@style/dialog_tv_style"
+        android:layout_height="50dp"
+        android:text="百度地图"
+        />
+    <View
+        style="@style/viewLine3"
+        />
+    <TextView
+        android:id="@+id/gaode_tv"
+        style="@style/dialog_tv_style"
+        android:layout_height="50dp"
+        android:text="高德地图"
+        android:layout_marginBottom="10dp"
+        />
+    <View
+        style="@style/viewLine3"
+        />
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/dialog_tv_style"
+        android:text="取消"/>
+</LinearLayout>

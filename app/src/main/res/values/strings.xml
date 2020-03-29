@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="action_about">关于</string>
+
+    <string name="welcomeString">Loading ...</string>
+    <string name="label_download">Download</string>
+    <string name="label_parsing_xml">Parsing XML</string>
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>个人中心</item>
+        <item>社区论坛</item>
+        <item>图片技术</item>
+        <item>车载导航</item>
+        <item>实时车况</item>
+        <item>定位</item>
+        <item>下载离线地图</item>
+        <item>切换在线/离线地图</item>
+        <item>设置</item>
+
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Order must be as the Titles are in ! -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_account_circle_black_24dp</item>
+        <item>@drawable/ic_view_quilt_black_24dp</item>
+        <item>@drawable/ic_action_map</item>
+        <item>@drawable/ic_action_search</item>
+        <item>@drawable/ic_add_circle_black_24dp</item>
+        <item>@drawable/ic_action_location_found</item>
+        <item>@drawable/ic_action_download</item>
+        <item>@drawable/ic_action_network_cell</item>
+        <item>@drawable/ic_brightness_medium_white_24dp</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon" translatable="false">Item Icon</string>
+    <string name="label_dest_reached">Destination Reached !</string>
+    <string name="foot_navigation">Navigate as Pedestrian</string>
+    <string name="start_navigation_label">Do you want to start Navigation to the "Pinned" location ?</string>
+    <string name="unable_to_find_location">-----</string>
+    <string name="only_online_downloads">Map Downloads are only availible in Online mode !</string>
+    <string name="app_offline">H1keMaps runs now in Offline mode !</string>
+    <string name="app_online">H1keMaps runs now in Online mode !</string>
+    <string name="pin_dest_for_nav">Please pin a Destination first !</string>
+
+    <string name="title_activity_about" translatable="false">AboutActivity</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="aboutString">
+     该页面未放到软件中.
+
+</string>
+    <string name="drawer_close">Drawer close</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="show_heat_map">show heat map</string>
+    <string name="hello_world">hello world</string>
+    <string name="abort_navigation">The Navigation will be aborted</string>
+    <string name="download_success">Success !</string>
+    <string name="download_in_background">Download has started. Please do not close the application</string>
+    <string name="app_name">足迹</string>
+    <string name="success_text">Successfully downloaded map data !</string>
+    <string name="high_energy_consumption">Caution! The Screen stays now On. This will consume a lot of your battery power !</string>
+    <string name="screen_toggle_off">The Screen will now behave normal and turn off after a couple of seconds.</string>
+</resources>

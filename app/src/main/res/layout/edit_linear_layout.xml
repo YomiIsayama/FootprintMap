@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headLayout"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="新建记事"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/edit_title_lay_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/edit_title_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="日期时间"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/edit_title_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入标题"
+                    android:textSize="15sp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_body"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:layout_above="@id/button_save"
+            android:layout_below="@id/edit_title_lay_lay"
+
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="294dp"
+            android:gravity="start"
+            android:hint="输入内容"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/edit_tupian"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_above="@id/button_save"
+            android:layout_below="@id/edit_title_lay_lay"
+
+            android:layout_marginTop="291dp"
+            android:layout_marginBottom="39dp"
+            android:gravity="start"
+            android:hint="插入图片"
+            android:textSize="12sp" />
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/edit_menu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_above="@id/button_back"-->
+        <!--android:visibility="visible"-->
+        <!--&gt;-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:text="@string/other_operation"-->
+        <!--android:textSize="15sp"-->
+        <!--android:textColor="#A52A2A"-->
+        <!--/>-->
+        <!--<Button-->
+        <!--android:id="@+id/btn_edit_menu"-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--/>-->
+        <!--<Button-->
+        <!--android:id="@+id/btn_edit_menu_upcoming"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toStartOf="@id/btn_edit_menu"-->
+        <!--android:layout_toLeftOf="@id/btn_edit_menu"-->
+        <!--android:background="#F0E68C"-->
+        <!--android:text="@string/str_upcoming"-->
+        <!--android:textSize="18sp"-->
+        <!--/>-->
+        <!--<Button-->
+        <!--android:id="@+id/btn_edit_menu_notice"-->
+        <!--android:layout_toRightOf="@id/btn_edit_menu"-->
+        <!--android:layout_toEndOf="@id/btn_edit_menu"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#F0E68C"-->
+        <!--android:text="@string/str_notice"-->
+        <!--android:textSize="18sp"-->
+        <!--/>-->
+        <!--</RelativeLayout>-->
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+
+            android:src="@drawable/ic_clear_black_24dp"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_edit_menu"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/btn_edit_menu_upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/btn_edit_menu"
+            android:layout_toLeftOf="@id/btn_edit_menu"
+
+            android:src="@drawable/ic_wallpaper_black_24dp"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btn_edit_menu_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/btn_edit_menu"
+            android:layout_toRightOf="@id/btn_edit_menu"
+
+            android:src="@drawable/ic_widgets_black_24dp"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            android:src="@drawable/ic_add_black_24dp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hamm.h1kemaps.app">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".application.H1keApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.AppStartActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MapActivity"
+            android:configChanges="orientation"></activity>
+        <activity android:name=".view.MapPackagesListActivity"></activity>
+        <activity android:name=".view.MapDownloadActivity"></activity>
+        <activity
+            android:name=".view.AboutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".view.MapActivity"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.hamm.h1kemaps.app.view.MapActivity" />
+        </activity>
+        <activity android:name=".view.TupianActivity"></activity>
+        <activity android:name=".view.CreateNewEntry"></activity>
+        <activity android:name=".view.Notbeencompleted"></activity>
+        <activity android:name=".view.OpenEntry"></activity>
+        <activity android:name=".view.AmendActivity"></activity>
+        <activity android:name=".view.ShezhiActivity"></activity>
+        <activity android:name=".view.ShequActivity"></activity>
+        <activity android:name=".view.TpjsActivity"></activity>
+        <activity android:name=".view.fatieActivity"></activity>
+
+        <activity android:name=".view.LoginActivity"></activity>
+        <activity android:name=".view.RegisterActivity"></activity>
+        <activity android:name=".view.MineActivity"></activity>
+        <activity android:name=".selecthotodemo.SelectPhotoActivity"></activity>
+        <activity android:name=".selecthotodemo.TPZSActivity"></activity>
+        <activity android:name=".view.lishizujiActivity"></activity>
+        <activity android:name=".view.daohangActivity"></activity>
+        <activity android:name=".view.obdActivity"></activity>
+
+
+    </application>
+</manifest>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".view.MineActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!--android.support.v7.widget.Toolbar
+        android:id="@+id/tb_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_setting"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="15dp"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_btn_setting"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_register"
+        app:layout_constraintEnd_toEndOf="@+id/tb_register"
+        app:layout_constraintTop_toTopOf="@+id/tb_register" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_scan"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="14dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_btn_scan"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tb_register" />-->
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fadeScrollbars="false"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_register">
+
+        <LinearLayout
+            android:id="@+id/ll_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_blur"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_launcher"/>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_blur"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_line"
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="185dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="right"
+                        android:text="ID：xxx"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/user_line" />
+
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="185dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="left"
+
+                        android:text="用户名"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/user_line" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:background="@drawable/yuanjiao"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/divider_padding"
+                android:paddingEnd="@dimen/divider_padding"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="177dp">
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="start|center_vertical"
+                    android:text="账号管理"
+                    android:textColor="@color/black87"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_account"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_btn_next" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginStart="@dimen/divider_padding"
+                android:layout_marginEnd="@dimen/divider_padding"
+                android:background="@color/black12" />
+
+            <LinearLayout
+                android:id="@+id/ll_binding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:background="@drawable/yuanjiao"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/divider_padding"
+                android:paddingEnd="@dimen/divider_padding"
+                tools:layout_editor_absoluteY="299dp">
+
+                <TextView
+                    android:id="@+id/tv_binding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="绑定手机账号"
+                    android:textColor="@color/black87"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_binding2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="未绑定"
+                    android:textColor="@color/black26" />
+
+                <ImageView
+                    android:id="@+id/iv_binding"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_btn_next" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginStart="@dimen/divider_padding"
+                android:layout_marginEnd="@dimen/divider_padding"
+                android:background="@color/black12" />
+            <LinearLayout
+                android:id="@+id/ll_binding10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:background="@drawable/yuanjiao"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/divider_padding"
+                android:paddingEnd="@dimen/divider_padding"
+                tools:layout_editor_absoluteY="299dp">
+
+                <TextView
+                    android:id="@+id/tv_binding11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="绑定电子邮箱"
+                    android:textColor="@color/black87"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_binding10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="未绑定"
+                    android:textColor="@color/black26" />
+
+                <ImageView
+                    android:id="@+id/iv_binding10"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_btn_next" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginStart="@dimen/divider_padding"
+                android:layout_marginEnd="@dimen/divider_padding"
+                android:background="@color/black12" />
+
+            <LinearLayout
+                android:id="@+id/ll_collection"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:background="@drawable/yuanjiao"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/divider_padding"
+                android:paddingEnd="@dimen/divider_padding"
+                tools:layout_editor_absoluteY="232dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="start|center_vertical"
+                    android:text="我的收藏"
+                    android:textColor="@color/black87"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_btn_next" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/type2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_type_padding"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                android:id="@+id/ll_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:background="@drawable/yuanjiao"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/divider_padding"
+                android:paddingEnd="@dimen/divider_padding"
+                tools:layout_editor_absoluteY="354dp">
+
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="建议与反馈"
+                    android:textColor="@color/black87"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_feedback"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_btn_next" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+
+                android:background="@color/black12" />
+
+            <LinearLayout
+                android:id="@+id/ll_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:background="@drawable/yuanjiao"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/divider_padding"
+                android:paddingEnd="@dimen/divider_padding"
+                tools:layout_editor_absoluteY="409dp">
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="start|center_vertical"
+                    android:text="关于"
+                    android:textColor="@color/black87"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_update_reminder"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/ic_round"
+                    android:visibility="invisible"
+                    tools:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_about"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_btn_next" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginStart="@dimen/divider_padding"
+                android:layout_marginEnd="@dimen/divider_padding"
+                android:background="@color/black12" />
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:background="@drawable/yuanjiao"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/divider_padding"
+                android:paddingEnd="@dimen/divider_padding"
+                tools:layout_editor_absoluteY="464dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="start|center_vertical"
+                    android:text="分享APP"
+                    android:textColor="@color/black87"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="二维码"
+                    android:textColor="@color/black26" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:layout_weight="0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_btn_next" />
+            </LinearLayout>
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/type3"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@color/colorBackground" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+
+                android:paddingEnd="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出登陆"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    tools:textSize="16sp" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@color/colorBackground" />
+
+            <LinearLayout
+                android:id="@+id/ll_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

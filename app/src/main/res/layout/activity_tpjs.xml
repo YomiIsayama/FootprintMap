@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/headimg2"
+                android:layout_width="80px"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/username2"
+                android:layout_width="300px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="图片融合效果：" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/comment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/tpzs1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/target" />
+
+        <ImageView
+            android:id="@+id/tpzs2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/naive" />
+
+        <ImageView
+            android:id="@+id/tpzs3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/final_res" />
+        <ImageView
+            android:id="@+id/tpzs4"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zs4" />
+        <ImageView
+            android:id="@+id/tpzs5"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zs5" />
+        <ImageView
+            android:id="@+id/tpzs6"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zs6" />
+        <ImageView
+            android:id="@+id/tpzs7"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zs7" />
+        <ImageView
+            android:id="@+id/tpzs8"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zs8" />
+        <ImageView
+            android:id="@+id/tpzs9"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zs9" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+    </LinearLayout>
+</ScrollView>
+
+
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!-- shape方法写形状（html的既视感）这个是未激活 --><!--参考 https://blog.csdn.net/qq_29755359/article/details/78030651  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--旧颜色 780088ff-->
+    <!--灰色d3d8e6-->
+    <solid android:color="@color/btn_disable" />
+
+    <corners android:radius="3dp" />
+</shape>

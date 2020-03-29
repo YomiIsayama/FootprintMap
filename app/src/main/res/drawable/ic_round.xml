@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- shape方法写形状（html的既视感）这个是已激活 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/red" />
+    <size
+            android:width="10dp"
+            android:height="10dp" />
+    <corners android:radius="10dp" />
+
+</shape>

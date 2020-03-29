@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- selector（选择器）可点击（已激活）时 是什么什么样，未激活是什么什么样 -->
+    <!-- 参考 https://blog.csdn.net/qq_20451879/article/details/80340823 -->
+    <item android:state_enabled="false" android:color="@color/btn_disable" />
+    <item android:state_enabled="true" android:color="@color/colorTheme" />
+</selector>
